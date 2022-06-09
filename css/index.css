@@ -198,7 +198,7 @@ footer .footer__info {
 #info {
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 188, 101);
+    background: linear-gradient( rgba(242,197,47,0.9640231092436975) 0%, rgba(84,27,0,1) 100%);
     gap: 2rem;
     align-items: center;
 
@@ -238,10 +238,7 @@ main .info__video {
     padding: 1em;
     
 }
- .galeria__list{
-     overflow: hidden;
-     object-fit: contain;
- }
+
 .galeria__list__img {
     overflow: hidden;
     width: 100%;
@@ -328,30 +325,73 @@ main .info__video {
 
 #seccion-form {
     display: flex;
-    flex-wrap: wrap;
-    padding: 10%;
-    align-items: flex-start;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    gap: 2rem;
+    width: 100%;
+    height: 80vh;
     background-size: cover;
-    background-image: url(../img/wood-hands-tools-woodworking-wallpaper-preview.jpg);
+    background:linear-gradient(rgba(242,197,47,0.9640231092436975) 0%, rgba(84,27,0,1) 100%) ;
     background-repeat: no-repeat;
     
 }
 
 .seccion-form__titular {
+    padding-top: 50px;
     font-family: 'Work Sans', sans-serif;
     color: rgb(255, 255, 255);
     font-size: 2rem;
     padding-right: 5%;
+  }
 
+.formulario {
+    background-color: rgb(241, 221, 128);
+    padding: 10px;
+    width: 50vh;
+    border-radius: 10px;
+}
+.formulario__input {
+    padding: 10px;
+    margin: 8px 0;
 }
 
-.seccion-form__formulario {
-    background-color: rgb(170, 201, 248);
-    border-style: solid;
+.formulario__text {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bolder;
+
+}
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 7px 15px rgb(158, 152, 152);
+}
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 7px 15px rgb(158, 152, 152);
+
+}
+.formulario__btn{
+    display: flex;
+    justify-content: flex-end;
+    gap:1rem;
+    transition: 1s;
     
-
-
+    
+}
+.formulario__btn:hover {
+    transform: scale(0.95);
+}
+button {
+    background-color: rgb(99, 189, 99);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+    
 }
 
         /*MEDIA QUERI*/
@@ -362,16 +402,29 @@ main .info__video {
     font-size: x-small; 
         
     }
+    .menu__link{
+        padding: unset;
+    } 
 
-    .menu__link {
-        padding: none;
-        transition: none;
+    .menu__link:hover {
+        transform: none;
+        border: none;
+        border-radius: none;
     }
+    .container__descripcion__card {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 4vw;
+        font-weight: 700;
     
+    }     
 
     .container_image {
     flex-direction: column;
-    gap: 2px;
+    gap: 1px;
+    animation: none;
     }
 
     .container__descripcion {  
@@ -382,7 +435,7 @@ main .info__video {
         font-weight: 700;
     }
     
-    .galeria__list { /*PRODUCTOS*/
+    .galeria__box { /*PRODUCTOS*/
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
        
     }  
@@ -448,9 +501,7 @@ main .info__video {
 
     #seccion-form {
         flex-direction: column;
-        background-image: none;
-        background-color: rgb(255, 188, 101) ;
-        max-width: 100vw;
+        gap: 1rem;
     }
 
     .seccion-form__titular {
@@ -460,10 +511,18 @@ main .info__video {
      }
     
   
-    .seccion-form__formulario {
+    .formulario {
          display: flex;
          flex-direction: column;
          max-width: 100%;
+         padding: 1px;
+  }
+    button {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(99, 189, 99);
+        padding: 10px 5px;
+        border: 10px;    
         
     }
      
