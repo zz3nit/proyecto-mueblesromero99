@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
     <title>Document</title>
 </head>
@@ -35,20 +36,26 @@
     <main id="galeria"><!--inicio de main-->
         <h1 class="galeria__titulo">Aqui nuestros proyectos y trabajos</h1>
         <article class="galeria__list">
-            <div class="galeria__list__img__1">
-                <img src="../img/casita edit fig.jpg" alt=""> </div>
-            <div class="galeria__list__img__2">
-                <img src="../img/baul edit fig.jpg" alt=""> </div>
-            <div class="galeria__list__img__3">
-                <img src="../img/vinoteca edit fig.jpg" alt=""> </div>
-            <div class="galeria__list__img__4">
-                <img src="../img/bajo_mesada_2_edit-removebg-preview 1.jpg" alt=""> </div>
-            <div class="galeria__list__img__5">
-                <img src="../img/baiu 2 edit fig.jpg" alt="">  </div> 
-            <div class="galeria__list__img__6">
-                <img src="../img/image 4.jpg" alt=""></div> 
-            <div class="galeria__list__img__7">
-                <img src="../img/panel tv edi fig.jpg" alt=""></div>                         
+            <picture class="galeria__box">
+                <div class="galeria__list__img">
+                    <img src="../img/casita para niños 1.jpg" style="overflow: hiden"; alt="casita para niños"> </div>
+                <div class="galeria__list__img">
+                    <img src="../img/image 4-1.jpg" alt="masetero"> </div>
+                 <div class="galeria__list__img">
+                    <img src="../img/img mov 2 1.jpg" alt="panel gris para tv"> </div>
+                 <div class="galeria__list__img">
+                    <img src="../img/vinoteca 1.jpg" alt="vinoteca de madera lustrada"> </div>
+                <div class="galeria__list__img">
+                    <img src="../img/baul 1.jpg" alt="baul para niños de madera de pino">  </div> 
+                <div class="galeria__list__img">
+                    <img src="../img/baiu 2 1.jpg" alt="baiu para tv moderno"></div> 
+                <div class="galeria__list__img">
+                    <img src="../img/mueble tv 1.jpg" alt="mueble para tv con estantes de mdf color gris"></div>
+                <div class="galeria__list__img">
+                    <img src="../img/mueble para tele 2 1.jpg" alt="mueble de madera con tipo estanteria"></div>
+                <div class="galeria__list__img">
+                    <img src="../img/perchero y zapatero 1.jpg" alt="perchero y zapatero de madera"></div>  
+            </picture>             
         </article>
     </main><!--fin de section-->
     <footer>
@@ -56,5 +63,9 @@
         <p class="footer__info" >Copyright by Gaston Rodriguez 2022</p>
         <img src="../img/insta.png" alt="logo instagram" width="50">
     </footer><!--fin de footer--> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
