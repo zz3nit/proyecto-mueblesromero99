@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/index.css">
     <title>Document</title>
 </head>
@@ -13,25 +14,30 @@
         <picture class="header__logo">
             <img src="../img/logo.png" alt="logo mueblesromero99 con el dibujo de un arbol" class="header__logo__img">
         </picture>       
-        <nav>
-            <ul class="menu">
-                <li class="menu__item">
-                    <a class="menu__link" href="../index.html">Inicio</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="./Empresa.html">Empresa</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="./Productos.html">Productos</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="./novedades.html">Novedades</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="./Contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>      
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-around" id="navbarText">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./mpresa.html">Empresa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Productos.html">Productos</a>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./novedades.html">Novedades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Contacto.html">Contacto</a>
+                </ul>
+              </div>
+            </div>
+          </nav>                
     </header><!--fin de header-->              
     <main id="galeria"><!--inicio de main-->
         <h1 class="galeria__titulo">Aqui nuestros proyectos y trabajos</h1>
@@ -63,6 +69,7 @@
         <p class="footer__info" >Copyright by Gaston Rodriguez 2022</p>
         <img src="../img/insta.png" alt="logo instagram" width="50">
     </footer><!--fin de footer--> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

@@ -30,6 +30,19 @@ a {
 
 }
 
+/* Override Boostrap*/
+.container {
+    --bs-gutter-x: none;
+    --bs-gutter-y: none;
+}
+
+.nav-item {
+    justify-content: space-around;
+}
+
+
+
+
 /*HEADER*/
 header { 
     display: flex;
@@ -40,8 +53,8 @@ header {
     background-image: url(../img/banner.png)
     
 }
-
-header nav ul {
+/*
+nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -50,7 +63,7 @@ header nav ul {
     height: 10vh;
     
    
-}
+}*/
 
 
 picture .header__logo__img {
@@ -82,13 +95,73 @@ picture .header__logo__img {
 
 /*SECTION INDEX*/
 
-.container {
+.contenedor {
     display: flex;
     flex-direction: column;
     background-color:  #4d4d4d93;
     max-width: 100%;
 }
 
+.container__titulo {    
+    font-family: 'Roboto Mono', monospace;
+    padding: 2rem;
+    text-align: center;
+    color: rgb(36, 22, 12);
+    font-weight: bolder;
+    font-weight: 700;
+    font-size: 4vw;
+    
+}
+
+section .container__subtitulo {
+    font-family: 'Work Sans', sans-serif;
+    padding: 3rem;
+    text-align: center;
+    color: rgb(36, 22, 12);
+    font-weight: bolder;
+    font-size: 4vw;
+}
+
+.container__descripcion__card {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 700;
+
+} 
+
+.container__card__link{
+    color: blue;
+    text-decoration: none;
+}
+    
+
+.container__card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    max-width: 80%;
+    margin:0 auto;
+    background-color: rgba(220, 220, 220, 0.295);
+    border-bottom: #2f2f2f;
+    
+}
+
+.container__card__img{
+    border-style: solid;
+    border-radius: 5px 5px;
+    box-shadow: 10px 10px 25px rgb(32, 28, 8) ;
+    transition: 2s;
+}
+.container__card__img:hover{
+    transform: scale(1.1);
+    
+}
+/*
 .container_image {
     display: flex;
     flex-direction: row;
@@ -120,70 +193,10 @@ picture .header__logo__img {
 
     0%{margin-left: 2%;} 
 
-}
-.container__card {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
-    align-items: center;
-    max-width: 80%;
-    margin:0 auto;
-    background-color: rgba(220, 220, 220, 0.295);
-    border-bottom: #2f2f2f;
-    
-}
-
-.container__card__img{
-    border-style: solid;
-    border-radius: 5px 5px;
-    box-shadow: 10px 10px 25px rgb(32, 28, 8) ;
-    transition: 2s;
-}
-.container__card__img:hover{
-    transform: scale(1.1);
-    
-}
-.container__descripcion__card {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.5vw;
-    font-weight: 700;
-
-} 
-
-.container__card__link{
-    color: blue;
-    text-decoration: none;
-}
-    
-
-.container__titulo {    
-    font-family: 'Roboto Mono', monospace;
-    padding: 2rem;
-    text-align: center;
-    color: rgb(36, 22, 12);
-    font-weight: bolder;
-    font-weight: 700;
-    font-size: 4vw;
-    
-}
-
-section .container__subtitulo {
-    font-family: 'Work Sans', sans-serif;
-    padding: 3rem;
-    text-align: center;
-    color: rgb(36, 22, 12);
-    font-weight: bolder;
-    font-size: 4vw;
-}
+}*/
 
 
-
-
-/*FOOTER*/ 
+    /*FOOTER*/ 
 footer {
     display: flex;
     justify-content: space-around;
@@ -405,7 +418,7 @@ button:hover {
         /*MEDIA QUERI*/
 
 @media  screen and (max-width: 480px)  {
-    header nav ul { /*INDEX*/
+   header nav ul { /*INDEX*/
     flex-direction: column;
     font-size: x-small; 
         
@@ -427,30 +440,18 @@ button:hover {
         font-size: 4vw;
         font-weight: 700;
     
-    }     
+    }   
 
-    .container_image {
-    flex-direction: column;
-    gap: 1px;
-    animation: none;
-    }
-
-    .container__descripcion {  
-        display: flex;
-        justify-content: center;
-        font-family: 'Work Sans', sans-serif;
-        font-size: 4vw;
-        font-weight: 700;
-    }
-    
-    .galeria__box { /*PRODUCTOS*/
+ 
+        /*PRODUCTOS*/
+    .galeria__box { 
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
        
     }  
    
 
-      
-    main .info__titular { /*EMPRESA*/
+       /*EMPRESA*/
+    main .info__titular { 
         display: flex;
         align-items: center;
         font-family: 'Work Sans', sans-serif;
@@ -464,7 +465,8 @@ button:hover {
         font-size: 1rem;
         }
     
-    .novedades__image { /*NOVEDADES*/       
+        /*NOVEDADES*/ 
+    .novedades__image {       
         flex-direction: column;
         max-width: 70%;
     }
@@ -533,8 +535,8 @@ button:hover {
         border: 10px;    
         
     }
-     
-    footer { /*FOOTER*/
+     /*FOOTER*/
+    footer { 
          flex-direction: row
          
              
