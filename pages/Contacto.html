@@ -13,7 +13,7 @@
         <picture class="header__logo">
             <img src="../img/logo.png" alt="logo mueblesromero99 con el dibujo de un arbol" class="header__logo__img">
         </picture>       
-        <nav class="navbar navbar-expand-lg bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -21,7 +21,7 @@
               <div class="collapse navbar-collapse justify-content-around" id="navbarText">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active text-color-white" aria-current="page" href="../index.html">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="./Empresa.html">Empresa</a>
@@ -38,37 +38,33 @@
             </div>
           </nav>              
     </header><!--fin de header-->      
-    <section id="seccion-form"><!--Inicio de section-->
-        <div class="seccion-form__titular">
-            <h1>Contacto</h1>
-            <p>Nos interesa conocerte y q nos conozcas,
-                <br> para saber tu opinion de nuestros productos, 
-                <br>recuerda q trabajamos de forma personalizada. 
-                <br>Aceptamos todos los proyectos q surjan.
+    <main id="container-fluid"><!--Inicio de main-->
+        <div class="row col-sm-2 m-auto">
+            <p class="text-sm p-8 g-1 display-6 ">Nos interesa conocerte y q nos conozcas,para saber tu opinion de nuestros productos, recuerda q trabajamos de forma personalizada. 
+              Aceptamos todos los proyectos q surjan.
             </p>
         </div>
-        <form class="formulario" action="" method="get">
-            <div class="formulario__input"> 
-                <label class="formulario__text for="Nombre">Nombre: </label>
-                <input type="text" name="Nombre" id="" placeholder="nombre"></div>
-            <div class="formulario__input">
-                <label class="formulario__text for="Asunto">Asunto: </label>
-                <input  type="text" name="Asunto" id="" placeholder="asunto">
-            </div>
-             <div class="formulario__input">
-                <label class="formulario__text for="correo">Email: </label>
-                <input type="email" name="correo" id="" placeholder="correo">
-            </div>
-             <div class="formulario__input">
-                <label class="formulario__text for="">Mensaje</label>
-                <textarea name="" id="" placeholder="escribe tu comentario"></textarea>
-            </div>
-            <div class="formulario__btn">
-                <button type="submitt">😀 Enviar</button>
-                <button type="reset"> 😑 Borrar Formulario</button>
-            </div>     
-    </form>    
-    </section><!--fin de section-->   
+        <div class="d-flex col-fluid-2 p-2 m-auto bg-secondary">
+					<div class="d-flex flex-column">
+						<h2 class="display-4">CONTACTO</h2>
+						<hr class="my-4">
+						<form>
+							<div class="form-row d-flex align-items-center">
+								<div class="col">
+									<input type="text" class="form-control" placeholder="Nombre">
+								</div>
+								<div class="col">
+									<input type="email" class="form-control" placeholder="Email">
+								</div>
+							</div>
+							<div class="form-group my-3">
+								<textarea name="" id="" cols="20" rows="6" class="form-control" placeholder="Consulta"></textarea>
+							</div>
+							<button type="submit" class="btn btn-success btn-lg border-0">Enviar</button>
+						</form>
+					</div>
+				</div>
+  </main><!--fin de main-->   
     <footer>
         <a class="footer__info"  href="./Contacto.html">Contactanos</a>
         <p class="footer__info" >Copyright by Gaston Rodriguez 2022</p>
