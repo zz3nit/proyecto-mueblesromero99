@@ -203,6 +203,7 @@ footer {
     display: flex;
     justify-content: space-around;
     background-color: #2f2f2f;
+    background-attachment: fixed;
     height: 10vh;
     align-items: center;
 }
@@ -211,6 +212,7 @@ footer .footer__info {
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
     font-size: large;
+    color: white;
     padding: 10px;
 
 }
@@ -352,7 +354,7 @@ main .info__video {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
     background-color:  #4d4d4d93;
     }
     
@@ -488,7 +490,8 @@ main .info__video {
    
     footer .footer__info {
         display: flex;
-        font-size: small;    
+        font-size: small;
+        color: white;    
      }
     
     }
