@@ -205,21 +205,25 @@ section .container__subtitulo {
     /*FOOTER*/ 
 footer {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     background-color: #2f2f2f;
     background-attachment: fixed;
     height: 10vh;
     align-items: center;
 }
 
-footer .footer__info {
+.footer__info {
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
     font-size: large;
     color: white;
+    margin: 5%;
     padding: 10px;
 
 }
+
   
  
 /*EMPRESA MAIN*/
@@ -308,7 +312,7 @@ main .info__video {
     color: rgb(201, 248, 32);
     text-align: center;
     font-size: 2rem;
-    padding: 15px;
+    padding: 10px;
 }
 
 .novedades__image {
@@ -442,7 +446,7 @@ main .info__video {
 
     .novedades__titulo {
         font-family: 'Work Sans', sans-serif;
-        color: rgb(255, 248, 248);
+        color: rgb(201, 248, 32);
         text-align: center;
         font-size: 6vw;
         padding: 15px; 
@@ -486,9 +490,7 @@ main .info__video {
     }
      /*FOOTER*/
     footer { 
-         flex-direction: row
-         
-             
+         flex-direction: row;
         }
         
    
