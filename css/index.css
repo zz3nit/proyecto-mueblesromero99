@@ -26,25 +26,13 @@ ul {
 a {
     font-family: 'Roboto Mono', monospace;
     text-decoration: none;
-    color: black;
 
 }
 
         /*OVERRIDE BOOSTRAP*/
 .container {
     --bs-gutter-x: none;
-    --bs-gutter-y: none;
-    
-}
-
-a {
-    text-decoration: none;
-    transition: 2s ease-out;
-}
-
-a:hover {
-    border: solid;
-    border-radius: 5px;
+    --bs-gutter-y: none;    
 }
 
 
@@ -58,7 +46,6 @@ header {
     background-image: url(../img/banner.png)
     
 }
-
 
 
 picture .header__logo__img {
@@ -80,6 +67,7 @@ picture .header__logo__img {
     font-size: larger;
     font-weight: bolder;
     
+    
 }
 
 
@@ -94,19 +82,27 @@ footer {
 
 footer .footer__info {
     font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
     color: white;
-    font-weight: 700;
+    font-weight: 500;
+    margin: 0;
     font-size: large;
-    padding: 1rem;
+    padding: 0.5rem;
     
 }
-
-  
+.footer__logo {
+    width: 7vh;
+    font-size: 1.1em;
+    background-color: #ddd;
+    border: 3px solid rgb(224, 6, 42);
+    border-radius: 7vh;
+    box-shadow: 0 0 20px rgb(206, 10, 10)
+}
 
         /*SECTION INDEX*/
 
 .contenedor {
-    background-color:  #4d4d4d93!important;
+    background-color:  #4d4d4d93;
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -132,6 +128,7 @@ footer .footer__info {
     box-shadow: 10px 10px 25px rgb(32, 28, 8) ;
     transition: 2s;
 }
+
 .container__card__img:hover{
     transform: scale(1.1);
     
@@ -353,6 +350,7 @@ main .info__video {
 @media  screen and (max-width: 480px)  {
 
          /*INDEX*/
+
     a {
         transition: none;
     }
@@ -388,16 +386,17 @@ main .info__video {
         font-size: 4vw;
         font-weight: 700;
     }
-    
-    .galeria__box { /*PRODUCTOS*/
+   
+        /*PRODUCTOS*/
+
+    .galeria__box { 
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         max-width: 100%;
        
     }  
    
-
-      
-    main .info__titular { /*EMPRESA*/
+        /*EMPRESA*/
+    main .info__titular { 
         display: flex;
         align-items: center;
         font-family: 'Work Sans', sans-serif;
@@ -410,8 +409,10 @@ main .info__video {
         font-family: 'Work Sans', sans-serif;
         font-size: 1rem;
         }
-    
-    .novedades__image { /*NOVEDADES*/       
+
+        /*NOVEDADES*/
+
+    .novedades__image {        
         flex-direction: column;
         max-width: 70%;
     }
@@ -453,6 +454,7 @@ main .info__video {
         font-weight: bold;
         font-style: oblique;
     }
+        /*CONTACTO*/
 
     #seccion-form {
         flex-direction: column;
@@ -464,26 +466,11 @@ main .info__video {
         font-size: medium;
         align-items: center;
      }
-    
-  
-    .formulario {
-         display: flex;
-         flex-direction: column;
-         max-width: 100%;
-         padding: 1px;
-  }
-    button {
-        display: flex;
-        justify-content: center;
-        background-color: rgb(99, 189, 99);
-        padding: 10px 5px;
-        border: 10px;    
-        
-    }
      
-    footer { /*FOOTER*/
+    
+        /*FOOTER*/
+    footer { 
          flex-direction: row
-         
              
         }
         
