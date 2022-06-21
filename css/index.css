@@ -70,7 +70,6 @@ picture .header__logo__img {
     
 }
 
-
          /*FOOTER*/ 
 footer {
     display: flex;
@@ -149,24 +148,6 @@ footer .footer__info {
     
 }
     
-.container_image {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1px;
-    justify-content: space-evenly;
-    padding-bottom: 1rem;
-    
-    
-} 
-.container__descripcion {  
-    display: flex;
-    justify-content: center;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1vw;
-    font-weight: 700;
-    
-}
 
 .container__titulo {    
     font-family: 'Roboto Mono', monospace;
