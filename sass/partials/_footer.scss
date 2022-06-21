@@ -1,0 +1,28 @@
+ /*FOOTER*/ 
+ footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2f2f2f;
+    height: 10vh;
+    align-items: center;
+}
+
+footer .footer__info {
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    margin: 0;
+    font-size: large;
+    padding: 0.5rem;
+    
+}
+
+.footer__logo {
+    width: 7vh;
+    font-size: 1.1em;
+    background-color: #ddd;
+    border: 3px solid rgb(224, 6, 42);
+    border-radius: 7vh;
+    box-shadow: 0 0 20px rgb(206, 10, 10)
+}

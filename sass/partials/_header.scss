@@ -1,0 +1,32 @@
+ /*HEADER*/
+ header { 
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    max-width: 100vw;
+    background-repeat: no-repeat;
+    background-image: url(../img/banner.png)
+    
+}
+
+
+picture .header__logo__img {
+    display: flex;
+    align-items: center;
+    width: 250px;
+} 
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+}
+
+
+.nav-item {
+    font-family: $font-principal;
+    padding: 1rem;
+    color: rgb(250, 232, 232);
+    font-size: larger;
+    font-weight: bolder;
+    
+}

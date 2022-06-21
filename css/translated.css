@@ -1,0 +1,103 @@
+/* MiSC */
+/* Font-Family*/
+/* Font-sizes*/
+/* NORMALIZE*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: WorkSans; }
+
+img {
+  max-width: 100%; }
+
+ul {
+  list-style: none; }
+
+a {
+  font-family: 'Roboto Mono', monospace;
+  text-decoration: none; }
+
+/* PARTIALS */
+/*HEADER*/
+header {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  max-width: 100vw;
+  background-repeat: no-repeat;
+  background-image: url(../img/banner.png); }
+
+picture .header__logo__img {
+  display: flex;
+  align-items: center;
+  width: 250px; }
+
+.header__logo {
+  display: flex;
+  justify-content: center; }
+
+.nav-item {
+  font-family: RobotoMono;
+  padding: 1rem;
+  color: #fae8e8;
+  font-size: larger;
+  font-weight: bolder; }
+
+/*FOOTER*/
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #2f2f2f;
+  height: 10vh;
+  align-items: center; }
+
+footer .footer__info {
+  font-family: 'Roboto Mono', monospace;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  margin: 0;
+  font-size: large;
+  padding: 0.5rem; }
+
+.footer__logo {
+  width: 7vh;
+  font-size: 1.1em;
+  background-color: #ddd;
+  border: 3px solid #e0062a;
+  border-radius: 7vh;
+  box-shadow: 0 0 20px #ce0a0a; }
+
+/* VIEWS*/
+/*PRODUCTOS*/
+#galeria {
+  background-color: #4d4d4d93;
+  padding: 20px; }
+  #galeria .galeria__titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: WorkSans;
+    font-weight: 500;
+    font-weight: bold;
+    font-size: 3rem; }
+  #galeria .galeria__box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 2rem;
+    max-width: 80%;
+    margin: auto;
+    padding: 1em;
+    background-color: rgba(220, 220, 220, 0.295); }
+  #galeria .galeria__list__img {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    transition: 1s;
+    object-fit: cover; }
+    #galeria .galeria__list__img:hover {
+      transform: scale(1.1); }

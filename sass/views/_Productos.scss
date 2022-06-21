@@ -1,0 +1,47 @@
+  /*PRODUCTOS*/ 
+
+#galeria {
+    background-color:  #4d4d4d93;
+    padding: 20px;  
+
+    .galeria__titulo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        font-family: $font-secondary;
+        font-weight: 500;
+        font-weight: bold;
+        font-size: 3rem;
+    }
+    
+    .galeria__box {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 2rem;
+        max-width: 80%;
+        margin: auto;
+        padding: 1em;
+        background-color: rgba(220, 220, 220, 0.295);
+        
+    }
+    .galeria__list__img {
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        transition: 1s;
+        object-fit: cover;
+
+        &:hover {
+            transform: scale(1.1);
+     }
+
+    }
+     
+} 
+
+
+  
+
+
+
