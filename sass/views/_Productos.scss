@@ -2,23 +2,23 @@
 
 #galeria {
     background-color:  #4d4d4d93;
-    padding: 20px;  
+    padding: $spacing-small;  
 
     .galeria__titulo {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 20px;
-        font-family: $font-secondary;
+        padding: $spacing-small;
+        font-family: $font-principal;
         font-weight: 500;
         font-weight: bold;
-        font-size: 3rem;
+        font-size: $text-large;
     }
     
     .galeria__box {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-        gap: 2rem;
+        gap: $spacing-medium;
         max-width: 80%;
         margin: auto;
         padding: 1em;
@@ -27,7 +27,7 @@
     }
     .galeria__list__img {
         overflow: hidden;
-        width: 100%;
+        max-width: 100%;
         height: auto;
         transition: 1s;
         object-fit: cover;

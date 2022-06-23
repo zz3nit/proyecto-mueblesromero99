@@ -1,6 +1,8 @@
 /* MiSC */
 /* Font-Family*/
 /* Font-sizes*/
+/* Colors-text*/
+/*Spacincs*/
 /* NORMALIZE*/
 * {
   padding: 0;
@@ -8,7 +10,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: WorkSans; }
+  font-family: Work Sans; }
 
 img {
   max-width: 100%; }
@@ -40,7 +42,7 @@ picture .header__logo__img {
   justify-content: center; }
 
 .nav-item {
-  font-family: RobotoMono;
+  font-family: Roboto Mono;
   padding: 1rem;
   color: #fae8e8;
   font-size: larger;
@@ -57,7 +59,7 @@ footer {
 footer .footer__info {
   font-family: 'Roboto Mono', monospace;
   text-decoration: none;
-  color: white;
+  color: #E0E0CE;
   font-weight: 500;
   margin: 0;
   font-size: large;
@@ -66,6 +68,7 @@ footer .footer__info {
 .footer__logo {
   width: 7vh;
   font-size: 1.1em;
+  background-attachment: fixed;
   background-color: #ddd;
   border: 3px solid #e0062a;
   border-radius: 7vh;
@@ -75,16 +78,16 @@ footer .footer__info {
 /*PRODUCTOS*/
 #galeria {
   background-color: #4d4d4d93;
-  padding: 20px; }
+  padding: 1rem; }
   #galeria .galeria__titulo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    font-family: WorkSans;
+    padding: 1rem;
+    font-family: Roboto Mono;
     font-weight: 500;
     font-weight: bold;
-    font-size: 3rem; }
+    font-size: 4em; }
   #galeria .galeria__box {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -95,9 +98,104 @@ footer .footer__info {
     background-color: rgba(220, 220, 220, 0.295); }
   #galeria .galeria__list__img {
     overflow: hidden;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     transition: 1s;
     object-fit: cover; }
     #galeria .galeria__list__img:hover {
       transform: scale(1.1); }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 480px) {
+  /*INDEX*/
+  a {
+    transition: none; }
+  .nav-item {
+    padding: 0;
+    color: #fae8e8;
+    font-size: small;
+    font-weight: bolder; }
+  .container__descripcion__card {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 4vw;
+    font-weight: 700; }
+  .container_image {
+    flex-direction: column;
+    gap: 1px;
+    animation: none; }
+  .container__descripcion {
+    display: flex;
+    justify-content: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 4vw;
+    font-weight: 700; }
+  /*PRODUCTOS*/
+  #galeria .galeria__titulo {
+    font-size: 2em;
+    color: #2f2f2f; }
+  #galeria .galeria__box {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    max-width: 100%;
+    padding: 1rem; }
+  /*EMPRESA*/
+  main .info__titular {
+    display: flex;
+    align-items: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2rem; }
+  main .info__parrafo {
+    display: flex;
+    align-items: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem; }
+  /*NOVEDADES*/
+  .novedades__image {
+    flex-direction: column;
+    max-width: 70%; }
+  .novedades__image__1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem; }
+  .novedades__image__2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; }
+  .novedades__image__3 {
+    flex-direction: column;
+    gap: 1rem; }
+  .novedades__image__4 {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; }
+  .novedades__titulo {
+    font-family: 'Work Sans', sans-serif;
+    color: #fff8f8;
+    text-align: center;
+    font-size: 6vw;
+    padding: 15px; }
+  .novedades__descripcion {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    color: white;
+    font-size: 5vw;
+    font-weight: bold;
+    font-style: oblique; }
+  /*CONTACTO*/
+  #seccion-form {
+    flex-direction: column;
+    gap: 1rem; }
+  .seccion-form__titular {
+    color: black;
+    font-size: medium;
+    align-items: center; }
+  /*FOOTER*/
+  footer {
+    flex-direction: row; }
+  footer .footer__info {
+    display: flex;
+    font-size: small; } }

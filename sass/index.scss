@@ -1,4 +1,5 @@
 /* MiSC */ 
+
 @import './misc/variables';
 @import './misc/normalize';
 @import './misc/mixins';
@@ -15,3 +16,6 @@
 @import './views/Productos';
 @import './views/novedades';
 @import './views/Contacto';
+
+/* MEDIA QUERIES */
+@import './misc/mediaqueries'
