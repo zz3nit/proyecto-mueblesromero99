@@ -42,12 +42,12 @@
   
        /*PRODUCTOS*/
 
-    #galeria .galeria__titulo {
+      #galeria .galeria__titulo {
         font-size: $text-base;
         color: $color-primary;
     }      
 
-    #galeria .galeria__box { 
+      #galeria .galeria__box { 
        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
        max-width: 100%;
        padding: $spacing-small;
