@@ -11,21 +11,20 @@
     .header__logo {
         display: flex;
         justify-content: center;
+
+        .header__logo__img {
+            display: flex;
+            align-items: center;
+            width: 250px;
+            }    
     }
 
-    
-    picture .header__logo__img {
-    display: flex;
-    align-items: center;
-    width: 250px;
-    }    
-
-
-    .nav-item {
-    font-family: $font-principal;
-    padding: 1rem;
-    color: rgb(250, 232, 232);
-    font-size: larger;
-    font-weight: bolder;
+        .nav-item {
+        display: flex;
+        justify-content: space-around;
+        font-family: $font-principal;
+        padding: 1rem;
+        color: rgb(250, 232, 232);
+        font-weight: bolder;
     
     }

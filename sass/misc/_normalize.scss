@@ -1,4 +1,4 @@
- /* NORMALIZE*/
+        /* NORMALIZE*/
  * {
     padding: 0;
     margin: 0;
@@ -25,3 +25,11 @@ a {
     text-decoration: none;
 
 }
+
+
+      /*OVERRIDE BOOSTRAP*/
+.container {
+    --bs-gutter-x: none;
+     --bs-gutter-y: none;    
+        }
+        

@@ -19,3 +19,12 @@ $spacing-large: 4rem;
 $spacing-medium: 2rem;
 $spacing-small: 1rem;
 $spacing-xsmall: 0.5rem;
+
+
+$primary: yellow;
+$secondary:rgba(255, 255, 0, 0.685);
+
+$text-colors: (
+    primary: $primary,
+    secondary: $secondary,
+);

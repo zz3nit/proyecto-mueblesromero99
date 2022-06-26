@@ -1,2 +1,63 @@
+        /*NOVEDADES*/
+
+ .novedades {
+    background-color: rgb(24, 15, 15);
+    display: flex;
+    flex-direction: column;
+    padding: $spacing-xsmall;
+    
+}
+
+.novedades__titulo {
+    font-family: 'Roboto Mono', monospace;
+    color: map-get($text-colors	, primary );
+    text-align: center;
+    font-size: $spacing-medium;
+    padding: $spacing-small;
+}
+
+.novedades__descripcion {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    color: map-get($text-colors , secondary);
+    font-size: 2vw;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.novedades__image {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 2rem; 
+}
+
+.novedades__image__1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;  
+}
+.novedades__image__2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 2rem;
+}
+.novedades__image__3{
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.novedades__image__4{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 2rem;
+}
+
+
 
 
