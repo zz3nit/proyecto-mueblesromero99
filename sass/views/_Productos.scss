@@ -21,8 +21,8 @@
         gap: $spacing-medium;
         max-width: 80%;
         margin: auto;
-        padding: 1em;
-        background-color: rgba(220, 220, 220, 0.295);
+        padding: $spacing-small;
+        background-color: $color-secondary;
         
     }
     .galeria__list__img {

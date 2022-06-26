@@ -169,33 +169,7 @@ section .container__subtitulo {
     font-size: 4vw;
 }
 
- 
-        /*EMPRESA MAIN*/
 
-#info {
-    display: flex;
-    flex-direction: column;
-    background-color:  #68646493 ;
-    gap: 2rem;
-    align-items: center;
-
-}
-main .info__titular {
-    display: flex;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 700;
-    font-weight: bolder;
-    font-size: 3rem;
-}
-
-main .info__parrafo { 
-    display:flex ;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 500;
-    font-weight: bold;
-    font-size: 2rem;
-    align-items: center;
-}
 
 
 
@@ -330,20 +304,7 @@ main .info__parrafo {
        
     }  
    
-        /*EMPRESA*/
-    main .info__titular { 
-        display: flex;
-        align-items: center;
-        font-family: 'Work Sans', sans-serif;
-        font-size: 2rem;
-        }
- 
-    main .info__parrafo {
-        display: flex;
-        align-items: center;
-        font-family: 'Work Sans', sans-serif;
-        font-size: 1rem;
-        }
+        
 
         /*NOVEDADES*/
 

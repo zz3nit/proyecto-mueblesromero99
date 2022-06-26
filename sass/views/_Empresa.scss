@@ -1,0 +1,42 @@
+    /*EMPRESA MAIN*/
+
+#info {
+    display: flex;
+    flex-direction: column;
+    background-color:  #68646493 ;
+    gap: $spacing-medium;
+    align-items: center;
+
+    .info__titular {
+        display: flex;
+        justify-content: center;
+        font-family: $font-principal;
+        font-weight: bold;
+        padding: $spacing-small;
+        font-size: $text-large;
+    }
+
+    .info__parrafo { 
+        display:flex ;
+        font-family: $font-secondary;
+        font-weight: 500;
+        font-weight: bold;
+        font-size: $text-base;
+        align-items: center;
+    }
+
+    .btn__info {
+        @include container(50%, 25%, #e6c014c9);
+        border-radius: 5px 5px;
+        text-align: center;
+        border: none;
+        
+        &:hover {
+            background-color: #e6c014;
+            color: white;
+        }
+    }
+    
+
+}
+   

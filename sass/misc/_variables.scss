@@ -3,13 +3,16 @@ $font-principal: Roboto Mono;
 $font-secondary: Work Sans;
 
 /* Font-sizes*/
-$text-large: 4em;
+$text-xlarge: 4em;
+$text-large: 3em;
 $text-base: 2em;
+$text-medium: 1.5em;
 $text-small: 1em;
 
 /* Colors-text*/
 $color-primary: #2f2f2f;
-$color-secondary: #E0E0CE;
+$color-secondary: rgba(220, 220, 220, 0.295);
+$color-normal: white;
 
 /*Spacincs*/
 $spacing-large: 4rem;
