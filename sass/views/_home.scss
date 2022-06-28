@@ -6,6 +6,17 @@
     flex-direction: column;
     max-width: 100%;
 }
+.container__titulo {    
+    font-family: $font-principal;
+    padding: 2rem;
+    text-align: center;
+    color: rgb(36, 22, 12);
+    font-weight: bolder;
+    font-weight: 700;
+    font-size: $text-large;
+
+}
+
 
 .container__card {
     display: flex;
@@ -39,8 +50,7 @@
 
     } 
     .container__card__link{
-        color: blue;
-        text-decoration: none;
+       @extend .style-link;
         border: none;
         transition: none;
         
@@ -48,24 +58,13 @@
         
 }
     
-    .container__titulo {    
-        font-family: 'Roboto Mono', monospace;
-        padding: 2rem;
-        text-align: center;
-        color: rgb(36, 22, 12);
-        font-weight: bolder;
-        font-weight: 700;
-        font-size: 4vw;
-    
-}
-
     .container__subtitulo {
-        font-family: 'Work Sans', sans-serif;
-        padding: 3rem;
+        font-family: $font-secondary;
+        padding: $spacing-medium;
         text-align: center;
         color: rgb(36, 22, 12);
         font-weight: bolder;
-    font-size: 4vw;
+        font-size: $text-large;
 }
 
 

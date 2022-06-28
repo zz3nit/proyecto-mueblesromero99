@@ -5,7 +5,7 @@
     background-size: cover;
     max-width: 100vw;
     background-repeat: no-repeat;
-    background-image: url(../img/banner.png)
+    background-image: url(../img/banner1.jpg)
      }
 
     .header__logo {
@@ -23,7 +23,7 @@
         display: flex;
         justify-content: space-around;
         font-family: $font-principal;
-        padding: 1rem;
+        padding: $spacing-small;
         color: rgb(250, 232, 232);
         font-weight: bolder;
     

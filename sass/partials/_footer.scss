@@ -8,13 +8,16 @@
     
     .footer__info {
         font-family: 'Roboto Mono', monospace;
-        text-decoration: none;
         color: $color-normal;
         font-weight: 500;
         margin: 0;
         font-size: large;
         padding: 0.5rem;
         
+       
+    }
+    .footer__link {
+        @extend .style-link;
     }
 
     .footer__logo {

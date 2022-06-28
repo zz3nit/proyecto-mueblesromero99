@@ -20,7 +20,7 @@ $spacing-medium: 2rem;
 $spacing-small: 1rem;
 $spacing-xsmall: 0.5rem;
 
-
+/*Maps*/
 $primary: yellow;
 $secondary:rgba(255, 255, 0, 0.685);
 
@@ -28,3 +28,15 @@ $text-colors: (
     primary: $primary,
     secondary: $secondary,
 );
+
+/*Extend*/
+.style-link {
+    color: #ffc600;
+    text-decoration: none;
+    font-family: $font-principal;
+    &:hover {
+        color:#ffc800d3;
+        opacity: 0.5;
+    }
+}
+
