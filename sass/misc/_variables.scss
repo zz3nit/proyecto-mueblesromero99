@@ -11,6 +11,7 @@ $text-small: 1em;
 
 /* Colors-text*/
 $color-primary: #2f2f2f;
+$color-base: #4d4d4d93;
 $color-secondary: rgba(220, 220, 220, 0.295);
 $color-normal: white;
 
@@ -27,7 +28,7 @@ $secondary:rgba(255, 255, 0, 0.685);
 $text-colors: (
     primary: $primary,
     secondary: $secondary,
-);
+);  /*aplicado en seccion novedades*/
 
 /*Extend*/
 .style-link {
@@ -37,6 +38,6 @@ $text-colors: (
     &:hover {
         color:#ffc800d3;
         opacity: 0.5;
-    }
-}
+    }   /*aplicado en home y en footer en los links q no estan en el navbar*/
+} 
 

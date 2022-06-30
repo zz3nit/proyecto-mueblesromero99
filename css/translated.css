@@ -6,11 +6,13 @@
 /* Colors-text*/
 /*Spacincs*/
 /*Maps*/
+/*aplicado en seccion novedades*/
 /*Extend*/
 .style-link, footer .footer__link, .container__card .container__card__link {
   color: #ffc600;
   text-decoration: none;
-  font-family: Roboto Mono; }
+  font-family: Roboto Mono;
+  /*aplicado en home y en footer en los links q no estan en el navbar*/ }
   .style-link:hover, footer .footer__link:hover, .container__card .container__card__link:hover {
     color: #ffc800d3;
     opacity: 0.5; }
@@ -39,6 +41,7 @@ a {
   --bs-gutter-x: none;
   --bs-gutter-y: none; }
 
+/* aplicado en seccion empresa*/
 /* PARTIALS */
 /*HEADER*/
 header {
@@ -300,6 +303,8 @@ footer {
   .container_image {
     flex-direction: column;
     animation: none; }
+  .carousel__img {
+    width: 100% !important; }
   /*PRODUCTOS*/
   #galeria .galeria__titulo {
     font-size: 2em;
