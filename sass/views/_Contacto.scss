@@ -1,20 +1,84 @@
         /*CONTACTO*/
 
-#container-sm {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 80vh;
-    background-color:  #4d4d4d93;
+        #background  {
+        background-image: url(../img/wood-hands-tools-woodworking-wallpaper-preview.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80vh;
+        opacity: 0.6;
 
-    .text__form{
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 100%;
-        font-size: $text-base;
-        padding: $spacing-medium;
+    } 
 
-    }
+
+    .contact__title {
+        display: flex;  
+        justify-content: center;
+        padding: $spacing-small;
+        color: $color-normal;
+    
     }
     
+    .box {
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $spacing-medium;
+        margin-top: $spacing-large;
+
+    .box__description {
+        font-family: $font-secondary;
+        font-size: $text-base;
+        color: $color-normal;
+        margin: $spacing-medium;
+
+    }
+
+    .box__form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: $text-small;
+        padding: $spacing-medium;
+        gap: $spacing-small;
+        border: 1 solid #2b2b2b ;
+        border-radius: 10px;
+        outline: 0px;
+    }
+        
+       
+
+        & input {
+            flex-basis: aut;
+            font-size: $spacing-small;
+            height: 15%; 
+            color: $color-primary;
+        }
+
+        .btn__enviar {
+            @include container (25%, 15%, orange);
+            font-size: $text-small;
+            border: none;
+            border-radius: $spacing-small/2;
+            outline: 0px;
+            color: $color-normal;
+            
+        }
+    }   
+
    
+
+  
+       
+       
+          
+    
+
+
+    
+   
+
+
+
+

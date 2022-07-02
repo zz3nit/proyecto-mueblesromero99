@@ -3,6 +3,7 @@
 /* MiSC */
 /* Font-Family*/
 /* Font-sizes*/
+/*background-colors*/
 /* Colors-text*/
 /*Spacincs*/
 /*Maps*/
@@ -103,7 +104,7 @@ footer {
   font-family: Roboto Mono;
   padding: 2rem;
   text-align: center;
-  color: #24160c;
+  color: #1f160f;
   font-weight: bolder;
   font-weight: 700;
   font-size: 3em; }
@@ -117,8 +118,7 @@ footer {
   align-items: center;
   max-width: 80%;
   margin: 0 auto;
-  background-color: rgba(220, 220, 220, 0.295);
-  border-bottom: #2f2f2f; }
+  background-color: rgba(220, 220, 220, 0.295); }
   .container__card .container__card__img {
     border-style: solid;
     border-radius: 5px 5px;
@@ -148,7 +148,7 @@ footer {
 #info {
   display: flex;
   flex-direction: column;
-  background-color: #68646493;
+  background-color: #4d4d4d93;
   gap: 2rem;
   align-items: center; }
   #info .info__titular {
@@ -259,21 +259,74 @@ footer {
   gap: 2rem; }
 
 /*CONTACTO*/
-#container-sm {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+#background {
+  background-image: url(../img/wood-hands-tools-woodworking-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 80vh;
-  background-color: #4d4d4d93; }
-  #container-sm .text__form {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
+  opacity: 0.6; }
+
+.contact__title {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  color: white; }
+
+.box {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 4rem; }
+  .box .box__description {
+    font-family: Work Sans;
     font-size: 2em;
-    padding: 2rem; }
+    color: white;
+    margin: 2rem; }
+  .box .box__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1em;
+    padding: 2rem;
+    gap: 1rem;
+    border: 1 solid #2b2b2b;
+    border-radius: 10px;
+    outline: 0px; }
+  .box input {
+    flex-basis: aut;
+    font-size: 1rem;
+    height: 15%;
+    color: #1f160f; }
+  .box .btn__enviar {
+    width: 25%;
+    height: 15%;
+    background-color: orange;
+    font-size: 1em;
+    border: none;
+    border-radius: 0.5rem;
+    outline: 0px;
+    color: white; }
 
 /* MEDIA QUERIES */
 /*MEDIA QUERIES*/
+@media screen and (max-width: 999px) {
+  .box {
+    display: flex;
+    flex-wrap: wrap; }
+  .box .box__description {
+    font-size: 1em;
+    margin: 0.5rem;
+    padding: 0; }
+  .box .box__form {
+    padding: 0.5rem; }
+  .box .box__form .btn__enviar {
+    width: 50%;
+    height: 15%;
+    background-color: orange; } }
+
 @media screen and (max-width: 480px) {
   a {
     transition: none; }
@@ -287,13 +340,13 @@ footer {
     font-family: Roboto Mono;
     padding: 1rem;
     text-align: center;
-    color: #2f2f2f;
+    color: #1f160f;
     font-size: 2em; }
   .container__subtitulo {
     font-family: Work Sans;
     padding: 1rem;
     text-align: center;
-    color: #2f2f2f;
+    color: #1f160f;
     font-size: 1.5em; }
   .container__card .container__descripcion__card {
     display: flex;
@@ -308,7 +361,7 @@ footer {
   /*PRODUCTOS*/
   #galeria .galeria__titulo {
     font-size: 2em;
-    color: #2f2f2f; }
+    color: #1f160f; }
   #galeria .galeria__box {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     max-width: 100%;
@@ -371,16 +424,6 @@ footer {
     font-weight: bold;
     font-style: oblique; }
   /*CONTACTO*/
-  #container-sm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #4d4d4d93; }
-    #container-sm .text__form {
-      width: 300px;
-      font-size: 1em;
-      padding: 1rem;
-      font-family: Work Sans; }
   /*FOOTER*/
   footer {
     display: flex;

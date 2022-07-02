@@ -9,10 +9,13 @@ $text-base: 2em;
 $text-medium: 1.5em;
 $text-small: 1em;
 
+/*background-colors*/
+$bg-primary: #4d4d4d93;
+$bg-secondary: rgba(220, 220, 220, 0.295);
+
 /* Colors-text*/
-$color-primary: #2f2f2f;
+$color-primary: rgb(31, 22, 15);
 $color-base: #4d4d4d93;
-$color-secondary: rgba(220, 220, 220, 0.295);
 $color-normal: white;
 
 /*Spacincs*/
@@ -20,6 +23,7 @@ $spacing-large: 4rem;
 $spacing-medium: 2rem;
 $spacing-small: 1rem;
 $spacing-xsmall: 0.5rem;
+
 
 /*Maps*/
 $primary: yellow;

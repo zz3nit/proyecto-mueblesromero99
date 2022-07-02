@@ -10,7 +10,7 @@
     font-family: $font-principal;
     padding: 2rem;
     text-align: center;
-    color: rgb(36, 22, 12);
+    color: rgb(31, 22, 15);
     font-weight: bolder;
     font-weight: 700;
     font-size: $text-large;
@@ -27,8 +27,8 @@
     align-items: center;
     max-width: 80%;
     margin:0 auto;
-    background-color: rgba(220, 220, 220, 0.295);
-    border-bottom: #2f2f2f;
+    background-color: $bg-secondary;
+   
 
     .container__card__img{
         border-style: solid;

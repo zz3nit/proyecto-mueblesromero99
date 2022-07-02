@@ -41,33 +41,22 @@
             </div>
           </nav> 
     </header><!--fin de header-->      
-    <main id="container-sm"><!--Inicio de main-->
-        <div class="row col-sm-6">
-            <p class="text-sm  text__form">Nos interesa conocerte y q nos conozcas,para saber tu opinion de nuestros productos, recuerda q trabajamos de forma personalizada. 
-              Aceptamos todos los proyectos q surjan.
-            </p>
-        </div>
-        <div class="d-flex col-sm-6">
-            <div class="d-flex flex-column p-2 bg-secondary m-auto">
-                <h2 class="display-4">CONTACTO</h2>
-                <hr class="my-4">
-                <form>
-                    <div class="form-row d-flex align-items-center">
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Nombre">
-                        </div>
-                        <div class="col">
-                            <input type="email" class="form-control" placeholder="Email">
-                        </div>
-                    </div>
-                    <div class="form-group my-3">
-                        <textarea name="" id="" cols="20" rows="6" class="form-control" placeholder="Consulta"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-success btn-lg border-0">Enviar</button>
-                </form>
-            </div>
-        </div>
-    </main><!--fin de main-->
+    <main id="background">
+      <section class="contact__title">
+        <h1>Contacto</h1>
+      </section>
+      <hr style="color: white ;">
+      <section class="box">
+        <p class="box__description">Si tienes dudas, quieres saber mas de nosotros, contarnos tus proyectos, puedes dejarnos tus datos. 
+          Recuerda que nos adecuamos a cualquier proyecto que surja.</p>
+        <form class="box__form" action="" autocomplete="off">
+          <input name="Nombre" type="text" placeholder="Ingresa tu nombre">
+          <input type="email" name="email"  placeholder="Ingresa tu correo">
+          <textarea name="mensaje" placeholder="Ingresa tu mensaje" id="" cols="30" rows="10"></textarea>
+          <input type="submit" name="enviar" value="Enviar mensaje" class="btn__enviar">
+        </form>  
+      </section>
+    </main>
     <footer>
       <a class="footer__link" href="./Contacto.html">Contactanos</a>
       <p class="footer__info" >Copyright by Gaston Rodriguez 2022</p>

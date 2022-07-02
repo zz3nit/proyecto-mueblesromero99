@@ -3,7 +3,7 @@
 #info {
     display: flex;
     flex-direction: column;
-    background-color:  #68646493 ;
+    background-color: $bg-primary ;
     gap: $spacing-medium;
     align-items: center;
 
@@ -14,6 +14,7 @@
         font-weight: bold;
         padding: $spacing-small;
         font-size: $text-large;
+        
     }
 
     .info__parrafo { 

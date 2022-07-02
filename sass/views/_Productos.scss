@@ -1,7 +1,7 @@
   /*PRODUCTOS*/ 
 
 #galeria {
-    background-color:  #4d4d4d93;
+    background-color: $bg-primary;
     padding: $spacing-small;  
 
     .galeria__titulo {
@@ -22,7 +22,7 @@
         max-width: 80%;
         margin: auto;
         padding: $spacing-small;
-        background-color: $color-secondary;
+        background-color: $bg-secondary;
         
     }
     .galeria__list__img {
