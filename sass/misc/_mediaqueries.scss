@@ -2,9 +2,23 @@
 
 
          @media  screen and (max-width: 999px) {  
+      #background {
+         max-width: 100%;
+      }
+      
+      #background .contact__title {
+         display: flex;  
+         justify-content: center;
+         padding: $spacing-xsmall;
+         color: $color-normal;
+     
+     }
+            
       .box { 
       display: flex;
       flex-wrap: wrap;
+      margin-top: 0;
+
       }
       
       .box .box__description {
