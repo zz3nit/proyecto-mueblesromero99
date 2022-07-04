@@ -10,7 +10,7 @@
          display: flex;  
          justify-content: center;
          padding: $spacing-xsmall;
-         color: $color-normal;
+         color: $color-primary;
      
      }
             
@@ -126,10 +126,7 @@
 
        /*NOVEDADES*/
 
-      .data-aos {
-      animation: none;
-     }   
-
+     
       .novedades__image {        
       flex-direction: column;
       width: 100%;
@@ -146,7 +143,7 @@
        flex-direction: column;
        align-items: center;
        max-width: 100%;
-       gap: 1rem;
+       gap: 2rem;
     } 
       .novedades__image__3{
       flex-direction: column;
@@ -156,24 +153,22 @@
       .novedades__image__4{
       flex-direction: column;
        align-items: center;
-       gap: 1rem;
+       gap: 2rem;
        max-width: 100%;
     }
 
       .novedades__titulo {
-       font-family: 'Work Sans', sans-serif;
+       font-family: $font-principal;
        color: map-get($text-colors	, primary );
        text-align: center;
-       font-size: $text-base;
+       font-size: $text-medium;
        padding: $spacing-small; 
       } 
       
       .novedades__descripcion {
-       display: flex;
-       flex-direction: column;
        padding: $spacing-small;
        color: map-get($text-colors , secondary);
-       font-size: $text-medium;
+       font-size: $text-small;
        font-weight: bold;
        font-style: oblique;
     }
