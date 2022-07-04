@@ -33,25 +33,25 @@
     margin: 0 auto;
     gap: 2rem;
 
-    &__image__1 {
+    .novedades__image__1 {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         gap: 2rem;  
     }
-    &__image__2{
+    .novedades__image__2{
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         gap: 2rem;
     }
-    &__image__3{
+    .novedades__image__3{
     
         display: flex;
         align-items: center;
         gap: 2rem;
     }
-    &__image__4{
+    .novedades__image__4{
         display: flex;
         flex-direction: row-reverse;
         align-items: center;

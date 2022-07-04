@@ -137,23 +137,23 @@
        max-width: 100%;
        flex-wrap: wrap;
        align-items: center;
-       gap: 1rem;  
+       gap: $spacing-medium;  
     }
       .novedades__image__2{
-       flex-direction: column;
+       flex-wrap: wrap;
        align-items: center;
        max-width: 100%;
-       gap: 2rem;
+       gap: $spacing-small
     } 
       .novedades__image__3{
       flex-direction: column;
-       gap: 1rem;
+       gap: $spacing-small;
        max-width: 100%;
     }
       .novedades__image__4{
-      flex-direction: column;
+      flex-wrap: wrap;
        align-items: center;
-       gap: 2rem;
+       gap: $spacing-small;
        max-width: 100%;
     }
 
