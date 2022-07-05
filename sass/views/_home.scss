@@ -1,7 +1,9 @@
         /*SECTION INDEX*/
 
  .contenedor {
-    background-color:  #4d4d4d93;
+    background-image: url(../img/texture-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -51,7 +53,11 @@
     } 
     .container__card__link{
        @extend .style-link;
-        border: none;
+        border: solid;
+        font-size: $text-small;
+        margin: 0 auto;
+        width: 25%;
+        border-radius: $spacing-xsmall;
         transition: none;
         
     }

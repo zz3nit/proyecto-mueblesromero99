@@ -1,7 +1,9 @@
   /*PRODUCTOS*/ 
 
 #galeria {
-    background-color: $bg-primary;
+    background-image: url(../img/texture-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: $spacing-small;  
 
     .galeria__titulo {
@@ -27,7 +29,6 @@
         
     }
     .galeria__list__img {
-        overflow: hidden;
         max-width: 100%;
         height: auto;
         transition: 1s;

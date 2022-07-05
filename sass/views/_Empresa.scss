@@ -3,7 +3,9 @@
 #info {
     display: flex;
     flex-direction: column;
-    background-color: $bg-primary ;
+    background-image: url(../img/texture-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     gap: $spacing-medium;
     align-items: center;
 
