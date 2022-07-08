@@ -9,12 +9,12 @@
 /*Maps*/
 /*aplicado en seccion novedades*/
 /*Extend*/
-.style-link, footer .footer__link, .container__card .container__card__link {
+.style-link, footer .footer__link {
   color: #ffc600;
   text-decoration: none;
   font-family: Roboto Mono;
   /*aplicado en home y en footer en los links q no estan en el navbar*/ }
-  .style-link:hover, footer .footer__link:hover, .container__card .container__card__link:hover {
+  .style-link:hover, footer .footer__link:hover {
     color: #ffc800d3;
     opacity: 0.5; }
 
@@ -111,6 +111,10 @@ footer {
   font-weight: 700;
   font-size: 3em; }
 
+.carousel-dark .carousel-caption {
+  background-color: #2c1a1d00;
+  color: white; }
+
 .container__card {
   display: flex;
   flex-direction: row;
@@ -131,15 +135,18 @@ footer {
   .container__card .container__descripcion__card {
     display: flex;
     flex-direction: column;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.5vw;
+    font-family: Roboto Mono;
+    font-size: 1.3em;
+    text-align: start;
     font-weight: 700; }
   .container__card .container__card__link {
-    border: solid;
+    width: 50%;
+    height: none;
+    background-color: #2c1a1d;
+    color: white;
     font-size: 1em;
-    margin: 0 auto;
-    width: 25%;
     border-radius: 0.5rem;
+    text-align: center;
     transition: none; }
 
 .container__subtitulo {
@@ -148,7 +155,8 @@ footer {
   text-align: center;
   color: #24160c;
   font-weight: bolder;
-  font-size: 3em; }
+  font-size: 3em;
+  text-transform: uppercase; }
 
 /*EMPRESA MAIN*/
 #info {
@@ -177,13 +185,13 @@ footer {
   #info .btn__info {
     width: 50%;
     height: 25%;
-    background-color: #e6c014c9;
+    background-color: orange;
     border-radius: 5px 5px;
     text-align: center;
     border: none; }
     #info .btn__info:hover {
-      background-color: #e6c014;
-      color: white; }
+      background-color: rgba(255, 166, 0, 0.89);
+      color: #1f160f; }
 
 /*PRODUCTOS*/
 #galeria {
@@ -291,7 +299,8 @@ footer {
     font-size: 2em;
     color: #1f160f;
     margin: 2rem;
-    font-weight: bold; }
+    font-weight: bold;
+    text-align: center; }
   .box .box__form {
     display: flex;
     flex-direction: column;
@@ -361,12 +370,14 @@ footer {
     padding: 1rem;
     text-align: center;
     color: #1f160f;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    text-transform: uppercase; }
   .container__card .container__descripcion__card {
     display: flex;
     flex-direction: column;
-    font-family: Work Sans;
-    font-size: 1em; }
+    font-family: Roboto Mono;
+    font-size: 1em;
+    font-weight: 500; }
   .container__card .container__card__link {
     width: 33%;
     font-size: 0.75em; }
@@ -442,8 +453,17 @@ footer {
   /*FOOTER*/
   footer {
     display: flex;
-    justify-content: space-between;
-    padding: 0.5rem; }
+    flex-direction: column;
+    padding: 0.5rem;
+    height: 15vh; }
   footer .footer__info {
     display: flex;
-    font-size: small; } }
+    Font-size: small; }
+  footer .footer__logo {
+    width: 5vh;
+    font-size: 0.5em;
+    background-attachment: fixed;
+    background-color: #ddd;
+    border: 3px solid #e006ce;
+    border-radius: 7vh;
+    box-shadow: 0 0 20px #e006ce; } }
