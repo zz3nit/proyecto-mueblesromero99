@@ -407,6 +407,7 @@ footer {
   #info .info__parrafo {
     display: flex;
     align-items: center;
+    width: 100%;
     font-family: Work Sans;
     font-size: 1em;
     padding: 0.5rem;
