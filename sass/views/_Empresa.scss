@@ -23,10 +23,12 @@
     .info__parrafo { 
         display:flex ;
         font-family: $font-secondary;
+        width: 50%;
         font-weight: 500;
         font-weight: bold;
         font-size: $text-base;
         align-items: center;
+        text-align: center;
     }
 
     .btn__info {
@@ -36,7 +38,7 @@
         border: none;
         
         &:hover {
-            background-color:rgba(255, 166, 0, 0.89);
+            background-color:rgba(255, 166, 0, 0.795);
             color:rgb(31, 22, 15);
         }
     }
